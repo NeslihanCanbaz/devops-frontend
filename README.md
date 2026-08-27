@@ -64,4 +64,4 @@ This application does not currently require any environment variables.
 
 ## Live URL
 
-- Frontend: `https://FRONTEND_DOMAIN` _(will be updated once domain is assigned)_
+- F- Frontend: `https://nesli-frontend.team-vit-devops.nl`
