@@ -8,7 +8,9 @@ function App() {
   const fetchBackendInfo = async () => {
     setError(null);
     try {
-      const response = await fetch("http://localhost:3000/api/info");
+      const response = await fetch(
+        "https://nesli-backend.team-vit-devops.nl/api/info",
+      );
       const data = await response.json();
       setBackendData(data);
     } catch (err) {
