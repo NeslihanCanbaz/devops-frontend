@@ -13,7 +13,29 @@ application's version information.
 
 ## Deployment Status
 
-Deployed automatically via GitHub Actions CI/CD pipeline.
+### CI/CD Pipeline
+
+This project uses GitHub Actions for continuous deployment. The workflow file
+is located at `.github/workflows/deploy.yml` and performs the following steps
+on every push to `main`:
+
+1. Checks out the repository code
+2. Sets up Node.js
+3. Installs dependencies
+4. Builds the application (`npm run build`)
+5. Copies the contents of the `dist` folder to the server via SCP
+6. Tests and reloads the Nginx configuration on the server
+
+Secrets used by the workflow (configured in repository Settings → Secrets
+and variables → Actions):
+
+| Secret         | Description                    |
+| -------------- | ------------------------------ |
+| SERVER_HOST    | VPS IP address                 |
+| SERVER_USER    | SSH username (franky)          |
+| SERVER_SSH_KEY | Private SSH key for deployment |
+| SERVER_PORT    | SSH port (22)                  |
+| DEPLOY_PATH    | Target directory on the server |
 
 ## Running Locally
 
