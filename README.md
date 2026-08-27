@@ -11,6 +11,10 @@ application's version information.
 - React
 - Vite
 
+## Deployment Status
+
+Deployed automatically via GitHub Actions CI/CD pipeline.
+
 ## Running Locally
 
 1. Clone the repository:
