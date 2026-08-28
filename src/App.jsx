@@ -21,7 +21,10 @@ function App() {
   return (
     <div style={{ padding: "2rem", fontFamily: "sans-serif" }}>
       <h1>DevOps Frontend</h1>
-      <p>Bu, backend API'sine bağlanan basit bir frontend uygulamasıdır.</p>
+      <p>
+        This is a simple frontend application connected to the backend API.
+        (CI/CD tested successfully ✅)
+      </p>
 
       <button onClick={fetchBackendInfo}>Backend Bilgisini Getir</button>
 
