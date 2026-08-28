@@ -25,7 +25,6 @@ function App() {
   return (
     <div className="page">
       <div className="card">
-        <div className="icon">🚀</div>
         <h1>DevOps Frontend</h1>
         <p className="subtitle">
           This is a simple frontend application connected to the backend API.
